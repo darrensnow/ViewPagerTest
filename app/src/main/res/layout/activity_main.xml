@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.darren.viewpagertest.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="Banner Test"/>
+
+    <Button
+        android:id="@+id/check_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="check update"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bt_smart_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="smart_connection"/>
+
+        <Button
+            android:id="@+id/jp_add_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add_device"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/mqtt_client"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MQTT_Client"/>
+
+        <Button
+            android:id="@+id/mqtt_server"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MQTT_Server"/>
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/background">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+        <TextView
+            android:id="@+id/online"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/avatar"/>
+
+    </RelativeLayout>
+</LinearLayout>
